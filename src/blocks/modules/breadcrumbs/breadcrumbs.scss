@@ -4,8 +4,9 @@
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: center;
-	padding-top: 16px;
+	padding-top: 6px;
 	padding-bottom: 18px;
+	padding-left: 25px;
 	&__item {
 		position: relative;
 		width: auto;
@@ -16,6 +17,7 @@
 		font-style: normal;
 		font-weight: 400;
 		font-size: 12px;
+		margin-top: 10px;
 		line-height: 16px;
 		margin-right: 8px;
 		height: 16px;
@@ -45,4 +47,9 @@
 		}
 	}
 
+}
+@media (max-width: 576px) {
+	.section__breadcrumbs {
+		display: none;
+	}
 }
