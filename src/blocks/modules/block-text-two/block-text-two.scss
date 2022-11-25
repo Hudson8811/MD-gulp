@@ -1,0 +1,27 @@
+.editor__top.editor__top__two {
+	align-items: flex-start;
+	.editor__top__left {
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		border-bottom: none;
+		h2 {
+			position: relative;
+			display: inline-block;
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 800;
+			font-size: 32px;
+			line-height: 40px;
+			color: #031B4B;
+		}
+	}
+	.editor__right.editor__top__right {
+		padding-bottom: 8px;
+	}
+}
+
+
+@media (max-width: 1200px) {
+
+}
