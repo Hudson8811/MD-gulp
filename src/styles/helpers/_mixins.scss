@@ -1,6 +1,3 @@
-
-@import "../helpers/var.scss";
-
 // /* автоматическая сетка на flex */
 // @mixin flex-row($gutter-left, $gutter-top) {
 //   display: flex;
@@ -36,35 +33,34 @@
 //   }
 // }
 
+// /* адаптив */
+// @function _get-media-width($width, $maxmin) {
+//   @if map-get($media-list, $width) {
+//     $width: map-get($media-list, $width);
 
-/* адаптив */
-@function _get-media-width($width, $maxmin) {
-  @if map-get($media-list, $width) {
-    $width: map-get($media-list, $width);
+//     @if $maxmin {
+//       @return $width;
+//     } @else {
+//       @return $width + 1;
+//     }
+//   } @else {
+//     @return $width;
+//   }
+// }
 
-    @if $maxmin {
-      @return $width;
-    } @else {
-      @return $width + 1;
-    }
-  } @else {
-    @return $width;
-  }
-}
+// @mixin max($width) {
+//   $width: _get-media-width($width, true);
+//   @media only screen and (max-width: $width + "px") {
+//     @content;
+//   }
+// }
 
-@mixin max($width) {
-  $width: _get-media-width($width, true);
-  @media only screen and (max-width: $width + "px") {
-    @content;
-  }
-}
-
-@mixin min($width) {
-  $width: _get-media-width($width, false);
-  @media only screen and (min-width: $width + "px") {
-    @content;
-  }
-}
+// @mixin min($width) {
+//   $width: _get-media-width($width, false);
+//   @media only screen and (min-width: $width + "px") {
+//     @content;
+//   }
+// }
 
 // /* ховер */
 // @mixin hover {
